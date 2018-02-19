@@ -9,3 +9,22 @@ h1
 {
   color:white;
 }
+#button2
+{
+  float:right;
+}
+#p2
+{
+  position:right;
+
+}
+#wave
+{
+  color:white;
+  font-size:25px;
+}
+#b1, #b2
+{
+  background-color: #4CAF50;
+  color: white;
+}

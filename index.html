@@ -11,18 +11,36 @@
 </head>
 <body>
 <div id="button">
+  <p id=wave>Select the Wave</p>
 <button onclick="hideshow('2014');" id=b1>2010-2014</button>
 <button onclick="hideshow('2009');" id=b2>2005-2009</button>
 <button onclick="hideshow('2004');" id=b3>2000-2004</button>
+<button onclick="hideshow('2000');" id=b4>1995-1999</button>
+<div id="button2"><a href="At/ivisproject2.html"><button>Analytic Trail</button></a></div>
+<p id="p2"> Click on a country to zoom in<br>
+  <p>Click around the coutnry outline to zoom out</p>
 </div>
 <!-- create container
  element for visualization -->
 <div id="viz2014" style="display:block"></div>
 <div id="viz2009" style="display:none"></div>
 <div id="viz2004" style="display:none"></div>
+<div id="viz2000" style="display:none"></div>
+
 
 
 <script>
+var visualization2000 = d3plus.viz()
+  .container("#viz2000")        // container DIV to hold the visualization
+  .data(data2000)        // data to use with the visualization
+  .coords("https://d3plus.org/topojson/countries.json") // pass topojson coordinates
+  .type("geo_map")          // visualization type
+  .id("cc")            // key for which our data is unique on
+  .text("country")             // key to use for display text
+  .color("TOTAL")
+      // key for coloring countries
+  .tooltip(["Married","Living together as married","Divorced","Separated","Widowed","Single","Male","Female","Sex-Male","Sex-Female"])         // keys to place in tooltip
+  .draw()
 var visualization2004 = d3plus.viz()
   .container("#viz2004")        // container DIV to hold the visualization
   .data(data2004)        // data to use with the visualization
@@ -46,7 +64,7 @@ var visualization2004 = d3plus.viz()
     .text("Country")             // key to use for display text
     .color("total")
         // key for coloring countries
-    .tooltip(["Married","Living together","Divorced","Separated","Widowed","Single","Male","Female","Sex-Male","Sex-Female"])         // keys to place in tooltip
+    .tooltip(["Married","Living together","Divorced","Separated","Widowed","Single","Male","Female"])         // keys to place in tooltip
     .draw()
 
 
@@ -58,7 +76,7 @@ var visualization2004 = d3plus.viz()
       .id("cc")            // key for which our data is unique on
       .text("country")             // key to use for display text
       .color("total")           // key for coloring countries
-      .tooltip(["Married","Living together","Divorced","Separated","Widowed","Single","Male","Female"])         // keys to place in tooltip
+      .tooltip(["Married","Living together","Divorced","Separated","Widowed","Single","Sex-Male","Sex-Female"])         // keys to place in tooltip
       .draw()
 
 
