@@ -7,29 +7,29 @@
 <script src="r1.js"> </script>
  <link rel="stylesheet" href="styles.css">
 <head>
-<h1><center>Marital Status and Gender Distribution</center></h1>
+<h1><center>Marital Status and Gender Distribution of countries</center></h1>
 </head>
 <body>
 <div id="button">
-  <p id=wave>Select the Wave</p>
-<button onclick="hideshow('2014');" id=b1>2010-2014</button>
-<button onclick="hideshow('2009');" id=b2>2005-2009</button>
-<button onclick="hideshow('2004');" id=b3>2000-2004</button>
-<button onclick="hideshow('2000');" id=b4>1995-1999</button>
-<div id="button2"><a href="At/ivisproject2.html"><button>Analytic Trail</button></a></div>
+  <p id=wave>Select the Time Period for display</p>
+    <button onclick="hideshow('2014');" id=b1 class=button>2010-2014</button>
+<button onclick="hideshow('2009');" id=b2 class=button>2005-2009</button>
+<button onclick="hideshow('2004');" id=b3 class=button>2000-2004</button>
+<button onclick="hideshow('2000');" id=b4 class=button>1995-1999</button>
+<a href="At/ivisproject2.html"><button id=button2>Analytic Trail</button></a></div></div>
 <p id="p2"> Click on a country to zoom in<br>
-  <p>Click around the coutnry outline to zoom out</p>
+  <p id="p2">Click around the coutnry outline to zoom out</p>
 </div>
 <!-- create container
  element for visualization -->
 <div id="viz2014" style="display:none">
-  <div id="period">Time Wave:2010-2014</div></div>
+  <div id="period">Time Wave Selected:2010-2014</div></div>
 <div id="viz2009" style="display:none">
-  <div id="period2">Time Wave:2005-2009</div></div>
+  <div id="period2">Time Wave Selected:2005-2009</div></div>
 <div id="viz2004" style="display:none">
-  <div id="period3">Time Wave:2000-2004</div></div>
+  <div id="period3">Time Wave Selected:2000-2004</div></div>
 <div id="viz2000" style="display:none">
-  <div id="period4">Time Wave:1995-1999</div></div>
+  <div id="period4">Time Wave Selected:1995-1999</div></div>
 
 
 

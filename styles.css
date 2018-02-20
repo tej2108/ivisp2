@@ -1,30 +1,49 @@
 body {
-    background-color: #808080;
+    background-color:#E3E6E3;
 }
-.viz2014
-{
-  background-color: grey;
-}
+
 h1
 {
-  color:white;
+  color:black;
 }
+#period, #period2, #period3, #period4
+{
+  font-size:20px;
+  color: #009270;
+
+}
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
 #button2
 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
   float:right;
 }
 #p2
 {
-  position:right;
+  font-size:16px;
 
 }
 #wave
 {
-  color:white;
-  font-size:25px;
+  color:black;
+  font-size:30px;
 }
-#b1, #b2
-{
-  background-color: #4CAF50;
-  color: white;
+
 }
