@@ -3,17 +3,39 @@ function hideshow(z) {
     var div2009 = document.getElementById("viz2009");
     var div2004 =document.getElementById("viz2004");
     var div2000=document.getElementById("viz2000");
+
     div2014.style.display = "none";
     div2009.style.display = "none";
     div2004.style.display ="none";
     div2000.style.display= "none";
     switch (z)
     {
-        case '2014': div2014.style.display = "block"; break;
-        case '2009': div2009.style.display = "block"; break;
-        case '2004': div2004.style.display = "block";break;
-        case '2000': div2000.style.display =  "block";break;
+        case '2014':
+        {
+          div2014.style.display = "block";
+          document.getElementById("period");
+             break;
+        }
+
+        case '2009':
+        {
+          div2009.style.display = "block";
+          document.getElementById("period2")
+          break;
+        }
+        case '2004':
+        {
+          div2004.style.display = "block"
+          document.getElementById("period3");
+          break;
+        }
+        case '2000':
+        { div2000.style.display =  "block";
+        document.getElementById("period4");
+        break;
+      }
     }
+
 }
 var data2000=[
 
